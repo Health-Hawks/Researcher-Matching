@@ -1,24 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Research_Matching_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temp_background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8kM-3I-hSX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tgJ-ml-Xsv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHP-Su-tly">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIPER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNF-GA-glV">
+                                                <rect key="frame" x="157" y="8" width="60" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="BgH-UD-MNs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.012936867773532867" green="0.50332087278366089" blue="0.48018568754196167" alpha="0.3904874559859155" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="aNF-GA-glV" firstAttribute="centerY" secondItem="XHP-Su-tly" secondAttribute="centerY" id="2tW-aL-Trt"/>
+                                            <constraint firstItem="aNF-GA-glV" firstAttribute="centerX" secondItem="XHP-Su-tly" secondAttribute="centerX" id="PTO-7S-PHM"/>
+                                            <constraint firstItem="aNF-GA-glV" firstAttribute="top" secondItem="XHP-Su-tly" secondAttribute="topMargin" id="uQ4-Yd-XHp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PIPER_Logo_PS.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qvh-JU-M62">
+                                <rect key="frame" x="123" y="78" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Py0-Zv-3yB"/>
+                                    <constraint firstAttribute="width" constant="128" id="zhU-qI-ctb"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ThF-UO-spL">
+                                <rect key="frame" x="0.0" y="275" width="375" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJT-B6-rQc">
+                                        <rect key="frame" x="14" y="17" width="346.5" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Partners In Practice, Education &amp; Research
+</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndP-VH-pr4">
+                                <rect key="frame" x="58" y="413" width="258" height="44"/>
+                                <color key="backgroundColor" red="0.00149706786" green="0.62909811739999999" blue="0.60221427679999995" alpha="0.75841769366197187" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                <state key="normal" title="Start Connecting">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8kM-3I-hSX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1d2-dA-XIT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qvh-JU-M62" secondAttribute="trailing" constant="124" id="2ft-p1-Qyb"/>
+                            <constraint firstItem="tgJ-ml-Xsv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="370-UE-Th4"/>
+                            <constraint firstItem="ThF-UO-spL" firstAttribute="top" secondItem="Qvh-JU-M62" secondAttribute="bottom" constant="69" id="448-Jc-J1M"/>
+                            <constraint firstItem="ndP-VH-pr4" firstAttribute="top" secondItem="ThF-UO-spL" secondAttribute="bottom" constant="77" id="7aD-ZL-fA5"/>
+                            <constraint firstItem="ThF-UO-spL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9bJ-oI-7Uo"/>
+                            <constraint firstItem="8kM-3I-hSX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Arn-WG-sHA"/>
+                            <constraint firstItem="tgJ-ml-Xsv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HvV-r3-cJP"/>
+                            <constraint firstItem="8kM-3I-hSX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LyA-6X-Qn1"/>
+                            <constraint firstItem="8kM-3I-hSX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UmV-zY-sU2"/>
+                            <constraint firstItem="Qvh-JU-M62" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="XHz-qX-pgI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tgJ-ml-Xsv" secondAttribute="trailing" id="gh0-fZ-jLP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ndP-VH-pr4" secondAttribute="trailing" constant="59" id="hX4-pX-FYt"/>
+                            <constraint firstItem="Qvh-JU-M62" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mb3-8B-hm1"/>
+                            <constraint firstItem="ThF-UO-spL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qMS-QW-9Uu"/>
+                            <constraint firstItem="ndP-VH-pr4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="ubL-8w-fhg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ndP-VH-pr4" secondAttribute="bottom" constant="210" id="wDP-Dx-zVv"/>
+                            <constraint firstItem="Qvh-JU-M62" firstAttribute="top" secondItem="tgJ-ml-Xsv" secondAttribute="bottom" constant="8" id="z3x-Wt-PVJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="PiperLogo_PS" destination="Qvh-JU-M62" id="9GT-By-XGX"/>
+                        <outlet property="background" destination="8kM-3I-hSX" id="LNg-FZ-oE8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="PIPER_Logo_PS.png" width="317" height="332"/>
+        <image name="temp_background.jpg" width="1242" height="2208"/>
+    </resources>
 </document>
