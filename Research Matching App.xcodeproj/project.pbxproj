@@ -34,10 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8B7E634C1F8462BE0085A555 /* PIPER_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIPER_Logo.png; sourceTree = "<group>"; };
-		8B7E634F1F846E690085A555 /* temp_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = temp_background.jpg; sourceTree = "<group>"; };
-		8B7E63501F8473C40085A555 /* temp_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = temp_Logo.png; sourceTree = "<group>"; };
-		8B7E63511F8477C60085A555 /* PIPER_Logo_PS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PIPER_Logo_PS.png; sourceTree = "<group>"; };
 		8BCCE28F1F845BC500440D03 /* Research Matching App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Research Matching App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCCE2921F845BC500440D03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BCCE2941F845BC500440D03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,17 +74,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8B7E634B1F8462730085A555 /* Image Assets */ = {
-			isa = PBXGroup;
-			children = (
-				8B7E63511F8477C60085A555 /* PIPER_Logo_PS.png */,
-				8B7E63501F8473C40085A555 /* temp_Logo.png */,
-				8B7E634F1F846E690085A555 /* temp_background.jpg */,
-				8B7E634C1F8462BE0085A555 /* PIPER_Logo.png */,
-			);
-			path = "Image Assets";
-			sourceTree = "<group>";
-		};
 		8B7E634E1F8469E30085A555 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				8B7E634E1F8469E30085A555 /* Controller */,
-				8B7E634B1F8462730085A555 /* Image Assets */,
 				8BCCE2921F845BC500440D03 /* AppDelegate.swift */,
 				8BCCE29B1F845BC500440D03 /* LaunchScreen.storyboard */,
 				8BCCE2961F845BC500440D03 /* Main.storyboard */,
