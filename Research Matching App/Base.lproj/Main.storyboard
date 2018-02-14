@@ -24,15 +24,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temp_background" translatesAutoresizingMaskIntoConstraints="NO" id="8kM-3I-hSX">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tgJ-ml-Xsv">
-                                <rect key="frame" x="0.0" y="20" width="205" height="283"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tgJ-ml-Xsv">
+                                <rect key="frame" x="0.0" y="20" width="376" height="283"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XHP-Su-tly">
-                                        <rect key="frame" x="0.0" y="0.0" width="205" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="376" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="PIPER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNF-GA-glV">
                                                 <rect key="frame" x="157" y="8" width="60" height="35"/>
@@ -50,20 +46,19 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W6W-wY-CQ3">
-                                        <rect key="frame" x="0.0" y="50" width="205" height="128"/>
+                                        <rect key="frame" x="0.0" y="50" width="376" height="128"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="PIPER_Logo_PS" translatesAutoresizingMaskIntoConstraints="NO" id="Qvh-JU-M62">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                <rect key="frame" x="124" y="0.0" width="128" height="128"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="128" id="7Ar-6g-Gp2"/>
                                                     <constraint firstAttribute="width" constant="128" id="z5V-CE-a5F"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ThF-UO-spL">
-                                        <rect key="frame" x="0.0" y="178" width="205" height="61"/>
+                                        <rect key="frame" x="0.0" y="178" width="376" height="61"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJT-B6-rQc">
                                                 <rect key="frame" x="0.0" y="20" width="375" height="21"/>
@@ -77,7 +72,7 @@
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndP-VH-pr4">
-                                        <rect key="frame" x="0.0" y="239" width="205" height="44"/>
+                                        <rect key="frame" x="0.0" y="239" width="376" height="44"/>
                                         <color key="backgroundColor" red="0.00149706786" green="0.62909811739999999" blue="0.60221427679999995" alpha="0.75841769366197187" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
                                         <state key="normal" title="Start Connecting">
@@ -90,7 +85,15 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="XHP-Su-tly" firstAttribute="leading" secondItem="tgJ-ml-Xsv" secondAttribute="leadingMargin" id="3m1-Hj-PXZ"/>
+                                    <constraint firstItem="ndP-VH-pr4" firstAttribute="centerX" secondItem="tgJ-ml-Xsv" secondAttribute="centerX" id="A7J-bM-Ur7"/>
+                                    <constraint firstItem="XHP-Su-tly" firstAttribute="trailing" secondItem="tgJ-ml-Xsv" secondAttribute="trailingMargin" id="sam-vw-23f"/>
+                                </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temp_background" translatesAutoresizingMaskIntoConstraints="NO" id="8kM-3I-hSX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
